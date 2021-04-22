@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 10vh 85vh 5vh;
+    
+}
+
+.container header{
+    font: bolder 5vh/10vh serif;
+    text-align: center;
+}
+
+.container main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.container footer {
+    font: bolder 2vh/5vh serif;
+    text-align: center;
+    background-color: #23B7E5;
+}
+
+.container main .map, .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: fuchsia;
+}
+
+.container main .info {
+    background-color: yellow;
+}
+
+svg {
+    height: 80vh;
+}
+
+g {
+    stroke: white;
+    stroke-width: 300px;
+    fill: rgb(61, 128, 96);
+}
+
+g:hover {
+    fill: rgb(37, 77, 57);
+}
+
+g .norte {
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.estado {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font: bolder 4vh/10vh serif;
+    height: 10vh;
+    margin-bottom: 3vh;
+}
+
+.card {
+    height: 15vh;
+    width: 20vw;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.cardBox {
+    position: relative;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.cardBox .card {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.cardBox .card .numbers {
+    position: relative;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.cardBox .card .cardName {
+    color: #48596B; 
+}
+
+.cardBox .card .iconBox {
+    font-size: 2.5em;
+    color: #333078;
+}
+
+
+
+.suspeitos {
+    background-color: #23B7E5;
+}
+.confirmados {
+    background-color:#F39C12 ;
+}
+.mortes {
+    background-color: #E74C3C;
+}
+
+.numeros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: bolder 8vh serif;
+}
+.titulos {
+    font: bolder 3vh/5vh serif;
+}
